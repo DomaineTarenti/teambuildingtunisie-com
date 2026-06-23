@@ -1,4 +1,4 @@
-import { getPostBySlug, getAllPosts } from '@/lib/mdx';
+import { getPostBySlug, getAllPosts, type Post } from '@/lib/mdx';
 import type { Metadata } from 'next';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { notFound } from 'next/navigation';
@@ -29,12 +29,13 @@ export async function generateMetadata({ params: { locale, slug } }: { params: P
 }
 
 export default async function ArticlePage({ params: { locale, slug } }: { params: Params }) {
-  let post;
+  let post: Post | undefined;
   try {
     post = getPostBySlug(locale, slug);
   } catch {
     notFound();
   }
+  if (!post) notFound(); // TypeScript guard — runtime never reaches here
 
   return (
     <main className="pt-24 pb-20 bg-background">

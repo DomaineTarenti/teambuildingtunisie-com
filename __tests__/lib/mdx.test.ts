@@ -34,6 +34,11 @@ describe('getAllPosts', () => {
       expect(new Date(posts[i - 1].date).getTime()).toBeGreaterThanOrEqual(new Date(posts[i].date).getTime());
     }
   });
+
+  it('returns empty array for unknown locale', () => {
+    const posts = getAllPosts('zz-unknown-locale-9999');
+    expect(posts).toEqual([]);
+  });
 });
 
 describe('getPostBySlug', () => {
