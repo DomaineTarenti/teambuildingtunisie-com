@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "blog": "Blog",
+    "cta": "Demander un devis"
+  },
+  "hero": {
+    "title": "Le Team Building en Tunisie",
+    "subtitle": "Des expériences inoubliables pour souder vos équipes et booster la performance",
+    "cta": "Demander un devis"
+  },
+  "why": {
+    "title": "Pourquoi le team building ?",
+    "cohesion": { "title": "Cohésion", "text": "Renforcez les liens entre vos collaborateurs et créez une culture d'équipe solide et durable." },
+    "performance": { "title": "Performance", "text": "Des équipes soudées sont plus efficaces, créatives et engagées dans leur travail quotidien." },
+    "wellbeing": { "title": "Bien-être", "text": "Offrez à vos équipes une expérience ressourçante qui booste la motivation et réduit le turnover." }
+  },
+  "activities": {
+    "title": "Nos activités",
+    "outdoor": "Outdoor & Aventure",
+    "culinary": "Team Building Culinaire",
+    "creative": "Ateliers Créatifs",
+    "sports": "Challenges Sportifs",
+    "wellbeing": "Bien-être & Mindfulness",
+    "custom": "Sur Mesure"
+  },
+  "clients": {
+    "title": "Ils nous font confiance"
+  },
+  "blog": {
+    "title": "Nos derniers articles",
+    "readMore": "Lire la suite",
+    "viewAll": "Voir tous les articles"
+  },
+  "contact": {
+    "title": "Demandez un devis",
+    "company": "Votre entreprise",
+    "participants": "Nombre de participants",
+    "participantsOptions": {
+      "10-20": "10 à 20 personnes",
+      "20-50": "20 à 50 personnes",
+      "50-100": "50 à 100 personnes",
+      "100+": "Plus de 100 personnes"
+    },
+    "activity": "Type d'activité",
+    "activityOptions": {
+      "outdoor": "Outdoor & Aventure",
+      "culinary": "Culinaire",
+      "creative": "Créatif",
+      "sports": "Sportif",
+      "wellbeing": "Bien-être",
+      "custom": "Sur mesure"
+    },
+    "message": "Votre message",
+    "submit": "Envoyer ma demande",
+    "success": "Votre demande a bien été envoyée. Nous vous répondrons dans les plus brefs délais.",
+    "error": "Une erreur est survenue. Veuillez réessayer."
+  },
+  "footer": {
+    "copyright": "© 2026 Team Building Tunisie. Tous droits réservés.",
+    "legal": "Mentions légales"
+  }
+}

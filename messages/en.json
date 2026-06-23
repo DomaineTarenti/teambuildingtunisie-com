@@ -1,0 +1,62 @@
+{
+  "nav": {
+    "blog": "Blog",
+    "cta": "Request a quote"
+  },
+  "hero": {
+    "title": "Team Building in Tunisia",
+    "subtitle": "Unforgettable experiences to unite your teams and boost performance",
+    "cta": "Request a quote"
+  },
+  "why": {
+    "title": "Why team building?",
+    "cohesion": { "title": "Cohesion", "text": "Strengthen bonds between your employees and build a solid, lasting team culture." },
+    "performance": { "title": "Performance", "text": "United teams are more efficient, creative, and engaged in their daily work." },
+    "wellbeing": { "title": "Well-being", "text": "Give your teams a rejuvenating experience that boosts motivation and reduces turnover." }
+  },
+  "activities": {
+    "title": "Our activities",
+    "outdoor": "Outdoor & Adventure",
+    "culinary": "Culinary Team Building",
+    "creative": "Creative Workshops",
+    "sports": "Sports Challenges",
+    "wellbeing": "Well-being & Mindfulness",
+    "custom": "Custom Events"
+  },
+  "clients": {
+    "title": "They trust us"
+  },
+  "blog": {
+    "title": "Latest articles",
+    "readMore": "Read more",
+    "viewAll": "View all articles"
+  },
+  "contact": {
+    "title": "Request a quote",
+    "company": "Your company",
+    "participants": "Number of participants",
+    "participantsOptions": {
+      "10-20": "10 to 20 people",
+      "20-50": "20 to 50 people",
+      "50-100": "50 to 100 people",
+      "100+": "More than 100 people"
+    },
+    "activity": "Activity type",
+    "activityOptions": {
+      "outdoor": "Outdoor & Adventure",
+      "culinary": "Culinary",
+      "creative": "Creative",
+      "sports": "Sports",
+      "wellbeing": "Well-being",
+      "custom": "Custom"
+    },
+    "message": "Your message",
+    "submit": "Send my request",
+    "success": "Your request has been sent. We will get back to you shortly.",
+    "error": "An error occurred. Please try again."
+  },
+  "footer": {
+    "copyright": "© 2026 Team Building Tunisia. All rights reserved.",
+    "legal": "Legal notice"
+  }
+}
