@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import '../globals.css';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 export async function generateMetadata({
   params: { locale },
@@ -49,7 +51,9 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <Header />
+          <div className="pt-16">{children}</div>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
