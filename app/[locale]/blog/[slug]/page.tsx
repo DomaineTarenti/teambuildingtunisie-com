@@ -6,8 +6,17 @@ import Link from 'next/link';
 
 type Params = { locale: string; slug: string };
 
-export async function generateStaticParams({ params: { locale } }: { params: { locale: string } }) {
-  return getAllPosts(locale).map((p) => ({ slug: p.slug }));
+export async function generateStaticParams() {
+  const locales = ['fr', 'en'] as const;
+  const params: Array<{ locale: string; slug: string }> = [];
+
+  for (const locale of locales) {
+    getAllPosts(locale).forEach((p) => {
+      params.push({ locale, slug: p.slug });
+    });
+  }
+
+  return params;
 }
 
 export async function generateMetadata({ params: { locale, slug } }: { params: Params }): Promise<Metadata> {

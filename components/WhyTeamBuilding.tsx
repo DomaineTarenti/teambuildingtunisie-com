@@ -29,19 +29,23 @@ export default async function WhyTeamBuilding() {
           {t('title')}
         </h2>
         <div className="grid md:grid-cols-3 gap-8">
-          {items.map((item) => (
-            <div key={item} className="text-center p-8 rounded-2xl bg-white shadow-sm hover:shadow-lg transition-shadow border border-brand/5">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary mb-6">
-                {icons[item]}
+          {items.map((item) => {
+            const titleKey = `${item}.title` as const;
+            const textKey = `${item}.text` as const;
+            return (
+              <div key={item} className="text-center p-8 rounded-2xl bg-white shadow-sm hover:shadow-lg transition-shadow border border-brand/5">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-primary/10 text-primary mb-6">
+                  {icons[item]}
+                </div>
+                <h3 className="font-heading font-bold text-xl text-secondary mb-3">
+                  {t(titleKey)}
+                </h3>
+                <p className="text-brand/65 leading-relaxed text-sm">
+                  {t(textKey)}
+                </p>
               </div>
-              <h3 className="font-heading font-bold text-xl text-secondary mb-3">
-                {t(`${item}.title` as any)}
-              </h3>
-              <p className="text-brand/65 leading-relaxed text-sm">
-                {t(`${item}.text` as any)}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
