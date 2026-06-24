@@ -9,6 +9,9 @@ export default async function Footer() {
         <a href="#" className="hover:text-white/70 transition-colors">
           {t('legal')}
         </a>
+        <a href="https://www.ziara.agency" target="_blank" rel="noopener" className="hover:text-white/70 transition-colors">
+          Powered by www.ziara.agency
+        </a>
       </div>
     </footer>
   );
