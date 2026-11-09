@@ -69,7 +69,7 @@ export default async function ArticlePage({ params: { locale, slug } }: { params
         <h1 className="font-heading font-bold text-4xl md:text-5xl text-secondary mb-10 leading-tight">
           {post.title}
         </h1>
-        <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-secondary prose-a:text-inherit prose-a:no-underline hover:prose-a:no-underline prose-p:text-brand/80 prose-p:leading-relaxed">
+        <div className="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-secondary prose-a:text-secondary prose-a:font-medium prose-a:underline prose-a:decoration-primary prose-a:decoration-2 prose-a:underline-offset-2 hover:prose-a:text-primary prose-p:text-brand/80 prose-p:leading-relaxed">
           <MDXRemote source={post.content} />
         </div>
       </article>

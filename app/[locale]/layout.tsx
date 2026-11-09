@@ -18,6 +18,7 @@ export async function generateMetadata({
     ? 'Organisez des activités de team building inoubliables en Tunisie. Outdoor, culinaire, créatif, sportif. Devis gratuit en 24h.'
     : 'Organize unforgettable team building activities in Tunisia. Outdoor, culinary, creative, sports. Free quote within 24h.';
   return {
+    metadataBase: new URL('https://teambuildingtunisie.com'),
     title,
     description,
     openGraph: {
@@ -27,7 +28,7 @@ export async function generateMetadata({
       locale: isFr ? 'fr_FR' : 'en_US',
       url: `https://teambuildingtunisie.com/${locale}`,
       siteName: 'Team Building Tunisie',
-      images: [{ url: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200&q=80', width: 1200, height: 630 }],
+      images: [{ url: '/images/blog/cohesion-equipe-tunisie.webp', width: 1200, height: 630 }],
     },
     alternates: {
       canonical: `https://teambuildingtunisie.com/${locale}`,
