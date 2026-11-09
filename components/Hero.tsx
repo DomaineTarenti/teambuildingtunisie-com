@@ -6,7 +6,7 @@ export default async function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1600&q=80')" }}
+        style={{ backgroundImage: "url('/images/blog/cohesion-equipe-tunisie.webp')" }}
       />
       <div className="absolute inset-0 bg-secondary/70" />
       <div className="absolute bottom-0 right-0 w-2/3 h-2/3 bg-primary/10 rounded-tl-full" />
